@@ -1,69 +1,71 @@
-# Introduction
+# Introdução
 
-This programming project provides a simple command-line calculator that allows users to write and evaluate math expressions using the `meval` crate in Rust.
+Este projeto de programação fornece uma calculadora simples de linha de comando que permite aos usuários escrever e avaliar expressões matemáticas usando a crate `meval` em Rust.
 
-# Organization
+# Organização do projeto:
 
-The folders and files of this project are the following:
+As pastas e arquivos deste projeto são os seguintes:
 
-* `src/main.rs`: This file contains the main implementation of the calculator. It reads user input, processes the expressions, and evaluates them using `meval`.
-* `Cargo.toml`: This file specifies the dependencies and metadata for the Rust project.
-* `README.md`: This file.
+* `src/main.rs`: Este arquivo contém a implementação principal da calculadora. Ele lê a entrada do usuário, processa as expressões e as avalia usando `meval`.
+* `Cargo.toml`: Este arquivo especifica as dependências e os metadados para o projeto **Rust**.
+* `README.md`: Este arquivo.
 
 # Running the Calculator
 
-To run this project, you need to have [Rust](https://www.rust-lang.org/) installed. Follow these steps to run the calculator:
+Para rodar esse programa você deve ter o [Rust](https://www.rust-lang.org/) instalado. Siga as instruções para executar o projeto:
 
-1. Clone the repository:
+1. Clone o repositório com o **Git**:
    ```sh
    git clone https://github.com/ianco-so/rust-calculator.git
    cd rust-calculator
    ```
-2. Run the project using Cargo:
-    Build the project using Cargo:
+2. Execute o projeto:
+
+    Faça o build do projeto com **Cargo**:
     ```sh
     cargo build
     ```
-    Run the project using Cargo:
+    Rode o projeto com **Cargo***:
     ```sh
     cargo run
     ```
-    Alternatively, you can build and run the project without Cargo:
-    Build the project:
+    Alternativamente, você pode construir e executar o projeto sem o Cargo.
+    Para compilar o programa com o **rustc**:
     ```sh
     rustc src/main.rs
     ```
-    Run the project:
+    Execute o programa:
     ```sh
-    ./main # or main.exe on Windows
+    ./main # ou main.exe no Windows
     ```
-# Usage
+# Uso
 
-The calculator supports basic arithmetic operations and functions. Here are some examples of valid expressions examples:
+A calculadora suporta operações aritméticas básicas e funções. Aqui estão alguns exemplos de expressões válidas:
+
 ```sh
 $ x = 10
-result: 10
+resultado: 10
 $ x + 2
-result: 12
+resultado: 12
 $ x / b
-error: Evaluation error
+error: Erro avaliando a expressão
 $ b = x + 12
-result: 22
+resultado: 22
 $ x = b / x
-result: 2.2
+resultado: 2.2
 $ x
-result: 2.2
+resultado: 2.2
 ```
 
-# Dependencies
+# Dependências
 
-The project uses the following Crates dependencies:
+O projeto usa as seguintes dependências:
 
-[**meval:**](https://crates.io/crates/meval) A crate for parsing and evaluating mathematical expressions in Rust. It is specified in the Cargo.toml file.
-You can add more dependencies as needed by updating the Cargo.toml file.
+[**meval:**](https://crates.io/crates/meval) Uma crate para analisar e avaliar expressões matemáticas em Rust. Está especificada no arquivo Cargo.toml.
+Você pode adicionar mais dependências conforme necessário, atualizando o arquivo Cargo.toml.
 
-# Authorship
+# Autoria
 
-Program developed by Ianco (<ianco.so@gmail.com>), 2024.1
+Programa desenvolvido por Ianc (<ianco.so@gmail.com>), 2024.1
 
 &copy; IMD/UFRN.
